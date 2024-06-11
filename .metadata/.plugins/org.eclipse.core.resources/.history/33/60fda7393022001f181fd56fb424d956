@@ -1,0 +1,18 @@
+package day15.api.io.buffered;
+
+import java.io.BufferedOutputStream;
+
+public class BfOutputStreamEx {
+	public static void main(String[] args) {
+		
+		/*
+		 *Buffered가 붙은 클래스는 , 성능 향상 클래스 입니다.
+		 *Buffered + 스트림클래스 명으로 사용합니다.
+		 * 
+		 *
+		 */
+		
+		BufferedOutputStream bos =new BufferedOutputStream(객체);
+	}
+
+}

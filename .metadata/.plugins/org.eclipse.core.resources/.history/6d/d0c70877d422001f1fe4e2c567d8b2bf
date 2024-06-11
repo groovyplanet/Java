@@ -1,0 +1,10 @@
+package day16.ramda.anonymous.basic;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		Car car = new Tico(); // 오버라이딩 된 메서드 실행된다.
+		car.run();
+	}
+
+}

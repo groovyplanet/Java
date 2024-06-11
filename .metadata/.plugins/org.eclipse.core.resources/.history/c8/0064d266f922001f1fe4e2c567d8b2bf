@@ -1,0 +1,18 @@
+package day16.ramda.collection;
+
+public class MainClass03 {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * 스트림 타입
+		 * Stream- 오리지널 스트림
+		 * IntStream - 정수 스트림
+		 * DoubleStream - 실수 스트림
+		 * Long - long타입 스트림
+		 */
+		
+		
+	}
+
+}

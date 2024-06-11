@@ -1,0 +1,9 @@
+package day17.thread.basic2;
+
+public class MyThread implements Thread{
+
+	
+	
+	
+
+}

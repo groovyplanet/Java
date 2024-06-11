@@ -1,0 +1,31 @@
+package day16.ramda.basic;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		Person p = new Person();
+		
+		Say01 say = new Say01() {
+
+			@Override
+			public void talking() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		};
+		
+		p.greeting(new Say01() {
+			
+			@Override
+			public void talking() {
+				// TODO Auto-generated method stub
+				
+			}
+		};());
+		
+		
+	}
+
+}

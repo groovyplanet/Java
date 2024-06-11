@@ -1,0 +1,40 @@
+package day15.api.io.stream;
+
+
+
+public class InputStream {
+	
+	public static void main(String[] args) {
+		/*
+		 * Input이 붙어 있는 클래스는 1바이트 기반의 입력스트림 클래스입니다.
+		 * 1.파일을 읽어들이는데 사용하는 클래스가 FileInputStream
+		 * 
+		 * 
+		 */
+		String path="C:/Users/user/Desktop/course/java/upload/hello.txt";
+		
+		
+		
+		InputStream ios = null;
+		try {
+			 ios =new FileInputStream(path);
+			 
+			 //1바이트씩 읽기
+			while(true) {
+				 int data =ios.read();
+				 if(data==-1) {
+					 break;
+				 }
+				 System.out.println((char)data); 
+				 //문자는 2바이트인데 , inputStream은 1바이트로 데이터를 읽기때문에 한글의 경우는 깨진다. 
+				 //영어는 문제가 없다.
+			}
+			 
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

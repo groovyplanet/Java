@@ -1,0 +1,23 @@
+package day17.thread.basic;
+
+public class MyThread implements Runnable{
+
+	private int num;
+	
+	@Override
+	public void run() {
+		
+		for(int i =0; i<=10; i++) {
+			num++; //10번 증가.
+			
+			Thread.sleep(1000);
+			
+		
+			
+			
+		}
+		
+		
+	}
+
+}

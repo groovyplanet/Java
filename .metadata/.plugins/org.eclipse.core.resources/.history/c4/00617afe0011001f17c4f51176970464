@@ -1,0 +1,35 @@
+package quiz01;
+
+public class Quiz22 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		 * 프로그램이 실행되면 , 랜덤한 덧셈 문제를 출력해줍니다.
+		 * 이 랜덤한 수의 범위는 1~100 사이의 값입니다.
+		 * (math.random() +1) *100
+		 * 
+		 * 그만 풀고 싶을때 0을 누르면되며,
+		 * 프로그램 정상 종료라고 나오고
+		 * 사용자가 답안을 입력할 때 마다 , 정답 또는 오답 카운트가 누적 됩니다. 
+		 * 정답과 오답 갯수가 출력됩니다.
+		 * 
+		 * cnt++
+		 * 
+		 * 
+		 * 
+		 */
+		
+		int arr = (int) ((int)Math.random()+1*100);
+		int abc = (int) ((int)Math.random()+1*100);
+		
+		while(true) {
+			System.out.println(arr+"+"+ abc+"="+arr+abc );
+			System.out.println("문제를 그만 푸시려면 0을 입력하세요.");
+			
+			
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+package quiz09;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		Computer computer = new Computer(new KeyBoard(), new Monitor(), new Mouse());
+		
+		//setter
+		KeyBoard key = new KeyBoard();
+		computer.setKey(key);
+		computer.setMon(mon);
+		computer.setMou(mou);
+		
+		
+		//getter
+		
+		
+		
+		
+		
+		computer.getKey();
+		computer.getMon();
+		computer.getMou();
+		
+		System.out.println();
+		
+	}
+	
+
+}

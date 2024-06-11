@@ -1,0 +1,14 @@
+package quiz01;
+
+import java.util.Arrays;
+class Solution {
+    public int solution(String my_string, String is_prefix) {
+        int answer = 0;
+        String temp[]=is_prefix.split("");
+        int index =
+        
+        
+        
+		return answer;
+    }
+}

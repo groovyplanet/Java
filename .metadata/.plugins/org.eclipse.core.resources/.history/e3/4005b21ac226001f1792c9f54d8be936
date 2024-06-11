@@ -1,0 +1,45 @@
+package quiz21;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexQuiz03 {
+
+    public static void main(String[] args) {
+
+        String path = "C:\\Users\\user\\Desktop\\course\\java\\upload\\건담.txt";
+
+        // 정규 표현식 패턴 정의
+        String idPattern = "\\d{8}-\\d{2}-\\d{12,13}";
+        String cpPattern = "건담[가-힣]+ [가-힣]+";
+        String gradePattern = "\\[[A-Z가-힣]+\\]";
+        String pricePattern = "[0-9]+,*[0-9]+원?";
+
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String str;
+            while ((str = br.readLine()) != null) {
+                Matcher m1 = Pattern.compile(idPattern).matcher(str);
+                Matcher m2 = Pattern.compile(cpPattern).matcher(str);
+                Matcher m3 = Pattern.compile(gradePattern).matcher(str);
+                Matcher m4 = Pattern.compile(pricePattern).matcher(str);
+
+                if (m1.find() && m2.find() && m3.find() && m4.find()) {
+                    int startIdx = m3.end();
+                    int endIdx = m4.start();
+                    String etc = str.substring(startIdx, endIdx).trim();
+                    System.out.println("일련번호: " + m1.group() + 
+                                       " 지점: " + m2.group() + 
+                                       " 등급: " + m3.group() + 
+                                       " 상세내용: " + etc + 
+                                       " 가격: " + m4.group());
+                    System.out.println("--------------------------");
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

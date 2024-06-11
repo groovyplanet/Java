@@ -1,0 +1,18 @@
+package day07.import_ex;
+
+import day07.abc.Apple; // 불러오기 import
+import day07.abc.Melon;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		//abc패키지에 있는 Apple를 사용
+		
+		Apple apple = new Apple(); //동일한 이름을 가지고 있는 클래스들이 많음
+		//내가 import를 뭘 했냐에 따라 사용하는게 달라질 수 있음.
+		
+		Melon melon =new Melon();
+		
+	}
+	
+}

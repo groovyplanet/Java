@@ -1,0 +1,24 @@
+package day15.api.io.buffered;
+
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+
+public class BfOutputStreamEx {
+	public static void main(String[] args) {
+		
+		/*
+		 *Buffered가 붙은 클래스는 , 성능 향상 클래스 입니다.
+		 *Buffered + 스트림클래스 명으로 사용합니다.
+		 * 
+		 *
+		 */
+		String path = "C:\\Users\\user\\Desktop\\course\\java\\upload\\hello3.txt";
+		
+		OutputStream os = new FileOutputStream(path);
+		
+		
+		BufferedOutputStream bos =new BufferedOutputStream(객체);
+	}
+
+}

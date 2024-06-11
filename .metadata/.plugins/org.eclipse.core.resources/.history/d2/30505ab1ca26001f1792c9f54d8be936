@@ -1,0 +1,14 @@
+package day17.thread.basic2;
+
+public class MainClass {
+	public static void main(String[] args) {
+		
+		MyThread m1 = new MyThread();
+		m1.setName("쓰레드명A");
+		m1.start();
+		
+		System.out.println("메인쓰레드 종료");
+		
+	}
+
+}

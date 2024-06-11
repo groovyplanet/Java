@@ -1,0 +1,11 @@
+package day17.thread.basic;
+
+public class MyThread implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

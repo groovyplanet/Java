@@ -1,0 +1,35 @@
+package quiz01;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int t = scan.nextInt();
+		int i = 1;
+		int sum = 0;
+		
+		while(i<=t) {
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			sum=a+b;
+			System.out.println(sum);
+			i++;
+		}
+		
+		
+
+		
+} 
+}
+
+//
+//이 블로그 글에서 BOJ의 기타 여러 가지 팁을 볼 수 있다.
+//
+//입력
+//첫 줄에 테스트케이스의 개수 T가 주어진다. T는 최대 1,000,000이다. 다음 T줄에는 각각 두 정수 A와 B가 주어진다. A와 B는 1 이상, 1,000 이하이다.
+//
+//출력
+//각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.

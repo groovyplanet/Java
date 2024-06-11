@@ -1,0 +1,16 @@
+package quiz21;
+
+public class RegexQuiz01 {
+	
+	public static void main(String[] args) {
+		
+		String str = "헐2,500원 ㅋㅋㅋ 찾아보시지 1,200원 6000원" ; 
+		//가격의 패턴을 찾아보자.
+		
+		
+		
+		
+	}
+	
+
+}

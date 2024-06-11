@@ -1,0 +1,18 @@
+package quiz09;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		Computer computer = new Computer();
+		
+		computer.getKey();
+		computer.getMon();
+		computer.getMou();
+		
+		System.out.println();
+		
+	}
+	
+
+}
